@@ -5,153 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 1em;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            padding: 2em;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .post {
-            background: #fff;
-            padding: 1em;
-            margin-bottom: 2em;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .post img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 1em;
-        }
-
-        .post h2 {
-            margin-top: 0.5em;
-            color: #333;
-        }
-
-        .post p {
-            margin-top: 0.5em;
-            color: #555;
-        }
-
-        .post a {
-            display: inline-block;
-            margin-top: 1em;
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .post a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-3">
         <h1>My Blog</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="product.html">Product</a>
-            <a href="contact.html">Contact</a>
-            <a href="landing.html">Landing</a>
+            <a href="index.html" class="text-white mx-2 text-decoration-none">Home</a>
+            <a href="portfolio.html" class="text-white mx-2 text-decoration-none">Portfolio</a>
+            <a href="product.html" class="text-white mx-2 text-decoration-none">Product</a>
+            <a href="contact.html" class="text-white mx-2 text-decoration-none">Contact</a>
+            <a href="landing.html" class="text-white mx-2 text-decoration-none">Landing</a>
         </nav>
     </header>
-    <div class="container">
-        <!-- Blog Post 1 -->
-        <div class="post">
-            <h2>The Future of Artificial Intelligence in Everyday Life</h2>
-            <img src="ai.jpg" alt="AI Future">
-            <p>
-                Artificial Intelligence is transforming industries worldwide, from healthcare to finance.
-                Discover the trends shaping the future of AI, including natural language processing and computer vision.
-            </p>
-            <a href="post1.html">Read More</a>
-        </div>
-
-        <!-- Blog Post 2 -->
-        <div class="post">
-            <h2>Why Data Science is the Hottest Career in 2024</h2>
-            <img src="data_science.jpg" alt="Data Science">
-            <p>
-                Data Science continues to be a lucrative and in-demand career. Learn how Python, R, and SQL are shaping
-                the industry and why businesses value data-driven insights.
-            </p>
-            <a href="post2.html">Read More</a>
-        </div>
-
-        <!-- Blog Post 3 -->
-        <div class="post">
-            <h2>5 Essential Tips for Beginner Programmers</h2>
-            <img src="essential.jpg" alt="Coding Tips">
-            <p>
-                Starting as a programmer? These 5 tips will guide you through the journey, from choosing the right
-                language to debugging effectively. Build your skills step-by-step.
-            </p>
-            <a href="post3.html">Read More</a>
-        </div>
-
-        <!-- Blog Post 4 -->
-        <div class="post">
-            <h2>Top 3 Cloud Platforms for IT Professionals</h2>
-            <img src="clouds.png" alt="Cloud Platforms">
-            <p>
-                Cloud computing has revolutionized IT. Learn the differences between AWS, Microsoft Azure,
-                and Google Cloud, and discover which platform is right for your career.
-            </p>
-            <a href="post4.html">Read More</a>
-        </div>
-
-        <!-- Blog Post 5 -->
-        <div class="post">
-            <h2>How to Build Your First Portfolio Website</h2>
-            <img src="port_web.png" alt="Portfolio Tips">
-            <p>
-                Showcase your skills and projects with a professional portfolio website. Follow this step-by-step
-                guide to create a standout site and impress potential employers.
-            </p>
-            <a href="post5.html">Read More</a>
+    <div class="container my-4">
+        <!-- Blog Posts -->
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="ai.jpg" class="card-img-top" alt="AI Future">
+                    <div class="card-body">
+                        <h5 class="card-title">The Future of Artificial Intelligence in Everyday Life</h5>
+                        <p class="card-text">Artificial Intelligence is transforming industries worldwide, from healthcare to finance. Discover the trends shaping the future of AI, including natural language processing and computer vision.</p>
+                        <a href="post1.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="data_science.jpg" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Data Science is the Hottest Career in 2024</h5>
+                        <p class="card-text">Data Science continues to be a lucrative and in-demand career. Learn how Python, R, and SQL are shaping the industry and why businesses value data-driven insights.</p>
+                        <a href="post2.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="essential.jpg" class="card-img-top" alt="Coding Tips">
+                    <div class="card-body">
+                        <h5 class="card-title">5 Essential Tips for Beginner Programmers</h5>
+                        <p class="card-text">Starting as a programmer? These 5 tips will guide you through the journey, from choosing the right language to debugging effectively. Build your skills step-by-step.</p>
+                        <a href="post3.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="clouds.png" class="card-img-top" alt="Cloud Platforms">
+                    <div class="card-body">
+                        <h5 class="card-title">Top 3 Cloud Platforms for IT Professionals</h5>
+                        <p class="card-text">Cloud computing has revolutionized IT. Learn the differences between AWS, Microsoft Azure, and Google Cloud, and discover which platform is right for your career.</p>
+                        <a href="post4.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 5 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="port_web.png" class="card-img-top" alt="Portfolio Tips">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Build Your First Portfolio Website</h5>
+                        <p class="card-text">Showcase your skills and projects with a professional portfolio website. Follow this step-by-step guide to create a standout site and impress potential employers.</p>
+                        <a href="post5.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
